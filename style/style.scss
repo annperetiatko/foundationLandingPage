@@ -50,6 +50,7 @@ body {
         flex-direction: column;
         flex-grow: 0;
         flex-shrink: 0;
+        min-width: 300px;
     }
     .footer-contact-information-container {
         display: flex;
