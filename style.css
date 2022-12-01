@@ -126,6 +126,10 @@ body {
   background: linear-gradient(1.41deg, rgba(75, 149, 217, 0.238) 1.48%, rgba(244, 244, 244, 0) 121.22%);
   padding: 10px 150px;
 }
+.main-title-name {
+  margin: 20px 0; 
+}
+
 .main-banner {
   display: flex;
   justify-content: space-between;
@@ -170,7 +174,7 @@ body {
 .main-row {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   column-gap: 20px;
   row-gap: 10px;
   margin: 0 0 10px 0;
@@ -182,7 +186,7 @@ body {
   flex-grow: 1;
   padding: 10px;
   background-color: white;
-  max-width: 260px;
+  max-width: 280px;
   border-radius: 5px;
   transition-duration: 1s;
   transition-delay: 3ms;
@@ -246,7 +250,7 @@ body {
 .main-row-blog {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   column-gap: 20px;
   row-gap: 10px;
   margin: 0 0 10px 0;
@@ -432,6 +436,29 @@ span {
   justify-content: space-between;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white;
+  border: 3px solid black; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  color: white;
+}
+
+
 @media (max-width: 1080px) {
   .header-bar {
     display: flex;
@@ -460,7 +487,7 @@ span {
 }
 @media (max-width: 768px) {
   .header-bar {
-    padding: 0;
+    padding: 10px 0;
   }
   .header-bar-content {
     display: flex;
@@ -476,6 +503,14 @@ span {
   .main {
     padding: 0;
   }
+
+
+  .main-row-blog,
+  .main-row {
+    flex-wrap: wrap;
+  }
+
+
   .main-banner,
   .main-banner-b,
   .main-banner-text {
@@ -496,9 +531,11 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 5px;
+    padding: 10px 0;
   }
   .main-row-item-block-blog {
     max-width: 400px;
+    margin: 10px;
   }
   .footer-contact-information-container .footer-contact-information-title {
     font-size: 15px;
